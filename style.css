@@ -39,7 +39,14 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
 }
-
+.sobre-texto {
+    text-align: justify; /* Alinhamento justificado */
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-size: 1.1em; /* Tamanho da fonte */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    color: #ffffff; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
 h2 {
     color: #333;
     font-size: 2em;
