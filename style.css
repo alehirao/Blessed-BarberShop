@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 100%; /* Ajusta a largura da logo para ser responsiva */
+    max-width: 300px; /* Define um tamanho máximo para a logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamanho ajustado para o título */
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em; /* Tamanho ajustado para o parágrafo */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto; /* Centraliza as seções */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Define uma largura máxima para as seções */
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+#whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 5px 0; /* Espaçamento entre os botões */
+}
+
+#whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.barbearia-imagem {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Layout Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Tamanho menor para o título em telas menores */
+    }
+
+    header p {
+        font-size: 1em; /* Tamanho menor para o parágrafo em telas menores */
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #whatsapp-button {
+        font-size: 14px; /* Tamanho menor para o botão em telas menores */
+        padding: 8px 16px;
+    }
+
+    .logo {
+        max-width: 200px; /* Tamanho menor para a logo em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Tamanho ainda menor para o título em celulares */
+    }
+
+    header p {
+        font-size: 0.9em; /* Tamanho ainda menor para o parágrafo em celulares */
+    }
+
+    #whatsapp-button {
+        font-size: 12px; /* Tamanho ainda menor para o botão em celulares */
+        padding: 6px 12px;
+    }
+
+    .logo {
+        max-width: 150px; /* Tamanho ainda menor para a logo em celulares */
+    }
+}

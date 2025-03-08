@@ -1,0 +1,8 @@
+barbearia-site/
+├── images/
+│   ├── logo.png
+│   ├── barbearia-interior.jpg
+│   └── icone-whatsapp.png
+├── index.html
+├── style.css
+└── script.js
