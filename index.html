@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia do João</title>
+    <title>Blessed BarberShop</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Biblioteca para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,20 +16,26 @@
         <p>O melhor lugar para cuidar do seu estilo!</p>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <img src="images/barbearia.jpg" alt="Barbearia" class="barbearia-imagem">
-        <p>Na Blessed Barbershop, oferecemos cortes de cabelo e barba de alta qualidade em um ambiente descontraído e acolhedor.</p>
+    <section id="sobre" data-aos="fade-up">
+        <h2></h2>
+        <div class="gallery">
+            <img src="images/fotos da barbearia 2.jpeg" alt="Barbearia" class="barbearia-imagem">
+            <img src="images/fotos da barbearia 3.jpeg" alt="Barbearia" class="barbearia-imagem">
+            <img src="images/Fotos da barbearia 1.jpeg" alt="Barbearia" class="barbearia-imagem">
+        </div>
+        <p>
+            Na <strong>Blessed Barbershop</strong>, cuidamos do seu estilo com dedicação e expertise. Desde 2017, estamos comprometidos em oferecer os melhores serviços de cortes de cabelo, barba e tratamentos capilares, sempre utilizando <strong>produtos de alta qualidade</strong> para garantir o melhor resultado para nossos clientes.
+        </p>
+        <p>
+            Nossa equipe de barbeiros é altamente qualificada e apaixonada pelo que faz. Trabalhamos com as marcas mais conceituadas do mercado, garantindo que você saia daqui não apenas com um visual incrível, mas também com a sensação de bem-estar e confiança.
+        </p>
+        <p>
+            Venha nos visitar e descubra por que somos referência em cuidados masculinos desde 2017. Na Blessed Barbershop, seu estilo é nossa prioridade!
+        </p>
     </section>
 
-    <section id="endereco">
-        <h2>Endereço</h2>
-        <p>Rua Castro Alves 988 - JD Panorama</p>
-        <p>CEP: 87113-080</p>
-    </section>
-
-    <section id="precos">
-        <h2>Preços</h2>
+    <section id="Valores" data-aos="fade-up">
+        <h2>Valores</h2>
         <ul>
             <li>Corte de Cabelo: R$ 40,00</li>
             <li>Barba: R$ 35,00</li>
@@ -43,20 +51,34 @@
         </ul>
     </section>
 
-    <section id="contato">
+    <section id="contato" data-aos="fade-up">
         <h2>Agende seu horário</h2>
         <p>Clique no botão abaixo para agendar diretamente pelo WhatsApp:</p>
         <a id="whatsapp-button" href="https://wa.me/5544998270649?text=Olá,%20gostaria%20de%20agendar%20um%20horário!" target="_blank">
-            <img src="images/Icone do whatsapp.png" alt="Ícone do WhatsApp" class="whatsapp-icone">
+            <img src="images/whatsa.png" alt="Ícone do WhatsApp" class="whatsapp-icone">
             Barbeiro Diego
         </a>
         <a id="whatsapp-button" href="https://wa.me/554498760535?text=Olá,%20gostaria%20de%20agendar%20um%20horário!" target="_blank">
-            <img src="images/Icone do whatsapp.png" alt="Ícone do WhatsApp" class="whatsapp-icone">
+            <img src="images/whatsa.png" alt="Ícone do WhatsApp" class="whatsapp-icone">
             Barbeiro Rick
         </a>
-        <a id="whatsapp-button" href="https://wa.me/5544999158383?text=Olá,%20gostaria%20de%20agendar%20um%20horário!" target="_blank">
-            <img src="images/Icone do whatsapp.png" alt="Ícone do WhatsApp" class="whatsapp-icone">
-            Barbeiro Pou
+    </section>
+
+    <section id="endereco" data-aos="fade-up">
+        <h2>Endereço</h2>
+        <p>Rua Castro Alves 988 - JD Panorama, Sarandi-PR</p>
+        <p>CEP: 87113-080</p>
+        <a id="maps-button" href="https://www.google.com/maps?q=Rua+Castro+Alves+988,+JD+Panorama,+Sarandi-PR" target="_blank">
+            <img src="images/maps.webp" alt="Ícone do Maps" class="maps-icone">
+            Ver no Google Maps
+        </a>
+    </section>
+
+    <section id="redes-sociais" data-aos="fade-up">
+        <h2>Redes Sociais</h2>
+        <a id="instagram-button" href="https://www.instagram.com/blessedsarandi/" target="_blank">
+            <img src="images/botao instag.png" alt="Ícone do Instagram" class="instagram-icone">
+            Siga-nos no Instagram
         </a>
     </section>
 
@@ -64,6 +86,15 @@
         <p>&copy; 2025 Blessed BarberShop. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa as animações
+        AOS.init({
+            duration: 1000, // Duração da animação
+            once: true, // Anima apenas uma vez
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
